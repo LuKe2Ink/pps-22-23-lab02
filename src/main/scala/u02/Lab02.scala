@@ -5,12 +5,12 @@ import scala.compiletime.ops.boolean.!
 
 object Lab02  extends App:
 
-  //task part 1
+  //task part 1, svolto da solo
   //es 1
   def hello() = println("Hello world!")
   hello()
 
-  //task part 2a
+  //task part 2a, svolto da solo
   //es 3
   //a)
   val positive: Int => String = (m: Int) => m match
@@ -57,7 +57,7 @@ object Lab02  extends App:
   println(notZero(0)) // false
   println(notZero(1) && !notZero(0))//true
 
-  //task part 2b
+  //task part 2b, svolto da solo
   //es 4
 
   //curried
@@ -83,7 +83,7 @@ object Lab02  extends App:
   println(p4(3, 4, 4)) //true
 
 
-  //task part 2b
+  //task part 2b, svolto da solo
   //es 5
 
   def compose(f: Int=>Int, g: Int=>Int): Int => Int = x =>
@@ -98,7 +98,7 @@ object Lab02  extends App:
   println("Generic Compose")
   println(composeGeneric[Int](_ - 1, _ * 2)(5))// 9
 
-  //task part 3
+  //task part 3, svolto da solo
   //es 6
   @annotation.tailrec
   def gcd(a: Int, b: Int): Int = (a,b) match
@@ -112,7 +112,7 @@ object Lab02  extends App:
   println(gcd(4,2)) // 2
   println(gcd(4,3)) // 1
 
-  //task part 4
+  //task part 4, svolto da solo
   //es 7
   enum Shape:
     case Rectangle(base: Double, height: Double, center:(Double, Double))
@@ -144,7 +144,7 @@ object Lab02  extends App:
   println(contains(Shape.Rectangle(2.0, 2.0, (0.0, 0.0)), (1.0, 2.0))) //false
   println(contains(Shape.Square(2.0, (0.0, 0.0)), (1.0, 2.0))) //false
 
-  //task part 5
+  //task part 5, svolto da solo
   //es 8
   enum Option[A]:
     case Some(a: A)
